@@ -48,3 +48,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        
+      - name: Deploy to Firebase Hosting preview channel
+        id: firebase_hosting_preview
+        uses: ./
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          expires: 14d
+          projectId: action-hosting-deploy-demo
+          entryPoint: "./demo"
+          firebaseToolsVersion: v11.12.0
