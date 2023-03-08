@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angular-to-firebase-hosting-with-gh-actions",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
