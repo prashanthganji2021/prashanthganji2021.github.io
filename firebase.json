@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "y",
+    "public": "dist/edutech-ab98c",
     "ignore": [
       "firebase.json",
       "**/.*",
