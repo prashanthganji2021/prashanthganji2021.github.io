@@ -17,8 +17,11 @@ export class CommonService {
   }
 
   login(data: any): Observable<any> {
-    const url = `${this.apiUrl}/login`;
+    const url = `${this.apiUrl}/users/login`;
+  
     return this.http.post<any>(url, data);
+  
+  
   }
 
   logout(): Observable<any> {
@@ -29,5 +32,10 @@ export class CommonService {
   updateProfile(profile: any): Observable<any> {
     const url = `${this.apiUrl}/users/profile`;
     return this.http.put<any>(url, profile);
+  }
+  
+  createUser(data: any): Observable<any> {
+    const url = `${this.apiUrl}/users/register`;
+    return this.http.post<any>(url, data);
   }
 }

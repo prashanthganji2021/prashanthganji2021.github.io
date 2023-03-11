@@ -12,6 +12,7 @@ export class AuthService {
 
   login(username: string, password: string): Observable<any> {
     return this.commonService.login({ username, password });
+    
   }
 
   logout(): Observable<any> {
@@ -20,5 +21,8 @@ export class AuthService {
 
   updateProfile(profile: any): Observable<any> {
     return this.commonService.updateProfile(profile);
+  }
+  isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
   }
 }
