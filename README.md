@@ -2,8 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
-BACKEND URL https://ill-red-scallop-toga.cyclic.app/
-FRONTEND URL https://edutech-ab98c.firebaseapp.com/
+- BACKEND URL https://ill-red-scallop-toga.cyclic.app/
+- FRONTEND URL https://edutech-ab98c.firebaseapp.com/
 
 ## Development server
 
