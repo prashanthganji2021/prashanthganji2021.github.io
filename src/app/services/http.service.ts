@@ -59,7 +59,7 @@ export class HttpService {
   private getRequestOptions(): any {
     let headers = new HttpHeaders();
     if (this.authToken) {
-      headers = headers.set('Authorization', `Bearer ${this.authToken}`);
+      headers = headers.set('Authorization', `${this.authToken}`);
     }
     return { headers };
   }
